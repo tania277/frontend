@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget{
                   children: [
 
                     SizedBox(height: 10,),
-                    Text('Login', style: Theme.of(context).textTheme.headline4),
+                    Text('Inicio de Sesión', style: Theme.of(context).textTheme.headline5, ),
                     SizedBox(height: 20),
 
                     ChangeNotifierProvider(
@@ -62,7 +62,7 @@ class _LoginForm extends StatelessWidget {
               decoration: InputDecorations.authInputDecoration(
                 hintText: 'example@gmail.com',
                 labelText: 'Correo electronico',
-                prefixIcon: Icons.alternate_email_sharp,
+                prefixIcon: Icons.email_sharp,
               ),
               onChanged: (value)=> loginForm.email = value,
               validator: (value){

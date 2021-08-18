@@ -1,5 +1,4 @@
 
-
 import 'package:all_safe/screens/login_screen.dart';
 import 'package:all_safe/screens/paginas_AyN.dart';
 import 'package:flutter/material.dart';

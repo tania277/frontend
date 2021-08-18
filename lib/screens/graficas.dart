@@ -38,7 +38,7 @@ class GraficasPage extends StatelessWidget{
   get sizedBox => null;
 
 
-  @override
+ @override
   Widget build(BuildContext context) {
     final sizedBox = const SizedBox(height: 16);
 
@@ -48,25 +48,28 @@ class GraficasPage extends StatelessWidget{
         child: Scaffold(
           appBar: AppBar(title: Center(child: const Text('Registro de Actividad'),),
           backgroundColor:  Colors.cyan[900],),
-          
           body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  Text('Monitoreo Semanal de Sensor de Distancia'),
-                  TimeChart(
-                    data: data,
-                    viewMode: ViewMode.weekly,
-                    barColor: Color.fromRGBO(2, 48, 71, 1),
-                  ),
-                  sizedBox,
-                   Text('Monitoreo Mensual de Sensor de Distancia'),
+                  const Text('Monitoreo semanal de Sensor de Movimiento'),
                   TimeChart(
                     data: data,
                     viewMode: ViewMode.monthly,
-                    barColor: Color.fromRGBO(2, 48, 71, 1),
+                    barColor: Colors.cyan[800],
                   ),
+                  sizedBox,
+
+
+                  const Text('Monitoreo Mensual de Sensor de Movimiento'),
+                  TimeChart(
+                    data: data,
+                    viewMode: ViewMode.weekly,
+                    barColor: Colors.cyan[800],
+                  ),
+                  
+                  
                   sizedBox,
                 
                 ],
