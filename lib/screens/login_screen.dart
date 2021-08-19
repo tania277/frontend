@@ -1,4 +1,4 @@
-import 'package:all_safe/providers/login_form_provider.dart';
+import 'package:all_safe/provider/login_form_provider.dart';
 import 'package:all_safe/screens/screens.dart';
 import 'package:all_safe/ui/input_decorations.dart';
 import 'package:all_safe/widgets/auth_background.dart';
